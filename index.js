@@ -24,7 +24,7 @@ Dinnercrafter.prototype = Object.create(AlexaSkill.prototype);
 Dinnercrafter.prototype.constructor = Dinnercrafter;
 
 Dinnercrafter.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    var speechText = "Welcome to the Dinnercrafter. You can ask a question like, what's the recipe for swag? I'm swagging, I'm swagging, I'm swagging, on youuuuuuuuuuuuuuuu. I'm saucing, I'm saucing, I'm saucing on youuuu... Now, what can I help you with.";
+    var speechText = "Welcome to the Dinnercrafter. You can ask a question like, what's the recipe for meatball sub? Now, what can I help you with.";
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
     var repromptText = "For instructions on what you can say, please say help me.";
