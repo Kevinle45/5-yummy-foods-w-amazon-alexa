@@ -8,17 +8,6 @@
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-/**
- * This sample shows how to create a Lambda function for handling Alexa Skill requests that:
- *
- * - Custom slot type: demonstrates using custom slot types to handle a finite set of known values
- *
- * Examples:
- * One-shot model:
- *  User: "Alexa, ask Dinnercrafter how to make paper."
- *  Alexa: "(reads back recipe for paper)"
- */
-
 'use strict';
 
 var AlexaSkill = require('./AlexaSkill'),
@@ -26,12 +15,6 @@ var AlexaSkill = require('./AlexaSkill'),
 
 var APP_ID = 'amzn1.echo-sdk-ams.app.9eec0bab-6c2b-41aa-9457-816b3029c6d3';
 
-/**
- * DinnercraftHelper is a child of AlexaSkill.
- * To read more about inheritance in JavaScript, see the link below.
- *
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
- */
 var Dinnercrafter = function () {
     AlexaSkill.call(this, APP_ID);
 };
